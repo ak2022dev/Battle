@@ -7,12 +7,6 @@ class Battle < Sinatra::Base
     register Sinatra::Reloader
   end
 
-=begin
-  get '/' do
-    'Testing infrastructure working!'
-  end
-  # our routes would go here
-=end
   enable :sessions
   
   get '/' do
@@ -29,7 +23,14 @@ class Battle < Sinatra::Base
     @player_1_name = session[:player_1_name]
     @player_2_name = session[:player_2_name]
     erb(:play)
-  end    
+  end 
+
+  get '/attack' do
+    @player_1_name = session[:player_1_name]
+    @player_2_name = session[:player_2_name]
+    erb(:attack)
+  end
+  
   # # Start the server if this file is executed directly (do not change the line below)
   run! if app_file == $0
 end
