@@ -1,3 +1,5 @@
+# in spec/features/web_helpers.rb
+
 def sign_in_and_play
     visit('/')
     fill_in :player_1_name, with: 'Amir'

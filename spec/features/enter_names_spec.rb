@@ -1,4 +1,4 @@
-# in spec/features/root_get_player_names_spec.rb
+# in spec/features/enter_names_spec.rb
 
 feature 'Testing root for getting player names' do
   scenario 'Can run app and check page for getting player names' do

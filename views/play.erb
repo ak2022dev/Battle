@@ -1,8 +1,10 @@
 <!-- in views/play.erb -->
 
-<%= @player_1.name %> vs. <%= @player_2.name %>
+<%= @player_1_name %> vs. <%= @player_2_name %>
 
-<%= @player_2.name %>: <%= @player_2.hit_points %>HP
+<!-- temporarily trying changing below to $player_2.hit_points instead of @player_2.hit_points -->
+
+<%= @player_2_name %>: <%= $player_2.hit_points %>HP
 
 <a href="/attack">Attack</a>
 

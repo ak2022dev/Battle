@@ -4,7 +4,7 @@ require_relative 'lib/player.rb'
 
 class Battle < Sinatra::Base
 
-    configure :development do
+  configure :development do
     register Sinatra::Reloader
   end
 
