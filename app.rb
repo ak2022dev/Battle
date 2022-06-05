@@ -27,11 +27,15 @@ class Battle < Sinatra::Base
   end 
 
   get '/attack' do
+# How it was first
 #    @player_1_name = $player_1.name
 #    @player_2_name = $player_2.name
+# How it became second
     @player_1 = $player_1
     @player_2 = $player_2
-    @player_1.attack(@player_2)
+# Changing below for third
+#    @player_1.attack(@player_2)
+    Game.new.attack(@player_2)
     erb(:attack)
   end
   
